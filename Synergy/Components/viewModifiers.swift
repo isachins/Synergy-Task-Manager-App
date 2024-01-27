@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// Default Formatting for buttons
 struct DefaultButtonViewModifier: ViewModifier {
     
     let backgroundColor: Color
@@ -30,6 +32,37 @@ extension View {
         modifier(DefaultButtonViewModifier(backgroundColor: backgroundColor))
     }
 }
+
+
+// Default Formatting for Text Feilds
+struct DefaultTextFeildViewModifier: ViewModifier {
+    
+    let backgroundColor: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            .background(backgroundColor)
+            .cornerRadius(10)
+            .textInputAutocapitalization(.never)
+            .autocorrectionDisabled()
+        
+    }
+}
+
+extension View {
+    
+    func DefaultTextFeildFormatting(backgroundColor: Color = .black.opacity(0.05)) -> some View {
+        modifier(DefaultButtonViewModifier(backgroundColor: backgroundColor))
+    }
+}
+
+
+
+
+
+
 
 struct viewModifiers: View {
     var body: some View {

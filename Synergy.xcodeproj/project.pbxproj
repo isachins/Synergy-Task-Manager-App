@@ -27,6 +27,7 @@
 		AD2097CD2B63E2CB0082B345 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097BB2B63E2CB0082B345 /* Poppins-ExtraBold.ttf */; };
 		AD2097CF2B63E2FE0082B345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */; };
 		AD48AE3B2B6428020000F08E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48AE3A2B6428020000F08E /* SignUpScreen.swift */; };
+		AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD892B352B6582B000D603A2 /* SignInScreen.swift */; };
 		ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE9F202B64359300FB7FBC /* SplashScreen.swift */; };
 		ADD7417F2B63ED8100057985 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7417E2B63ED8100057985 /* SwiftUIView.swift */; };
 		ADD741812B63EE3000057985 /* viewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD741802B63EE3000057985 /* viewModifiers.swift */; };
@@ -53,6 +54,7 @@
 		AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD2097D02B63E3300082B345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD48AE3A2B6428020000F08E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		AD892B352B6582B000D603A2 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		ADBE9F202B64359300FB7FBC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		ADD7417E2B63ED8100057985 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		ADD741802B63EE3000057985 /* viewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiers.swift; sourceTree = "<group>"; };
@@ -97,10 +99,10 @@
 				AD2097D02B63E3300082B345 /* Info.plist */,
 				AD20978E2B63BB310082B345 /* SynergyApp.swift */,
 				AD2097902B63BB310082B345 /* ContentView.swift */,
+				AD892B372B6587EA00D603A2 /* Components */,
 				ADD741822B63F01A00057985 /* Onboarding */,
 				AD48AE392B6427F10000F08E /* Auth */,
 				ADD7417E2B63ED8100057985 /* SwiftUIView.swift */,
-				ADD741802B63EE3000057985 /* viewModifiers.swift */,
 				AD2097922B63BB330082B345 /* Assets.xcassets */,
 				AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */,
 				AD2097A92B63E26D0082B345 /* Fonts */,
@@ -136,9 +138,18 @@
 		AD48AE392B6427F10000F08E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				AD892B352B6582B000D603A2 /* SignInScreen.swift */,
 				AD48AE3A2B6428020000F08E /* SignUpScreen.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		AD892B372B6587EA00D603A2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ADD741802B63EE3000057985 /* viewModifiers.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		ADBE9F222B64359E00FB7FBC /* Model */ = {
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD741842B63F03200057985 /* WelcomeModel.swift in Sources */,
+				AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */,
 				ADD741812B63EE3000057985 /* viewModifiers.swift in Sources */,
 				ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */,
 				AD2097A82B63D0730082B345 /* GetStarted.swift in Sources */,

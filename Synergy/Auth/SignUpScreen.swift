@@ -9,7 +9,14 @@ import SwiftUI
 
 struct SignUpScreen: View {
     var body: some View {
-        Text("Sign Upppp")
+        NavigationStack {
+            ZStack {
+                VStack {
+                    Text("Sign Up")
+                }
+            }
+            .navigationTitle("Sign Up")
+        }
     }
 }
 

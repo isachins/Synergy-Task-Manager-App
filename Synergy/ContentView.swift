@@ -32,7 +32,7 @@ struct ContentView: View {
                     }
                 })
             } else {
-                SignUpScreen()
+                SignInScreen()
             }
         }
     }
