@@ -24,7 +24,7 @@ struct SplashScreen: View {
                     .font(Font.custom("Poppins-Bold", size: 36))
                     .multilineTextAlignment(.center)
                 
-                Text("All tasks, meetingsand annual plans in one place are always at hand")
+                Text("All tasks, meetings and annual plans in one place are always at hand")
                     .font(Font.custom("Poppins-Light", size: 20))
                     .foregroundStyle(.back.opacity(0.8))
                     .multilineTextAlignment(.center)

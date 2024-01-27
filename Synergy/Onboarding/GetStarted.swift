@@ -10,27 +10,56 @@ import SwiftUI
 //for single screen
 struct GetStarted: View {
     
-    @State var firstTime: Bool = false
-    //@AppStorage("isFirstLaunch") private var isFirstLaunch: Bool = true
+    var onSignUp: () -> Void
     
     var body: some View {
-//        Group {
-//            if isFirstLaunch {
-//                WelcomeView()
-//            } else {
-//                Signup()
-//            }
-//        }
-//        .onChange(of: isFirstLaunch) { newValue in
-//            // Update the flag in UserDefaults when the welcome screen is dismissed
-//            if !newValue {
-//                //UserDefaults.standard.set(false, forKey: "isFirstLaunch")
-//            }
-//        }
-        Text("Hello")
+        NavigationStack {
+            ZStack {
+                VStack {
+                    Spacer()
+                    ImageTitleView()
+                    
+                    Spacer()
+                    Button(action: {
+                        onSignUp()
+                    }, label: {
+                        Image(systemName: "chevron.right")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 15, height: 15)
+                            .foregroundStyle(.fore)
+                            .frame(width: 75, height: 75)
+                            .background(Color.back)
+                            .clipShape(Circle())
+                            .shadow(radius: 7, x: 5, y: 3)
+                    })
+                    Spacer()
+                }
+                .padding(.horizontal)
+            }
+        }
     }
 }
 
-#Preview {
-    GetStarted()
+//#Preview {
+//    WelcomeScreen1()
+//}
+
+struct ImageTitleView: View {
+    var body: some View {
+        VStack(alignment: .center, spacing: 15) {
+            Image("getStarted1")
+                .resizable()
+                .scaledToFit()
+            
+            Text("Welcome to the Synergy")
+                .font(Font.custom("Poppins-Bold", size: 36))
+                .multilineTextAlignment(.center)
+            
+            Text("All tasks, meetingsand annual plans in one place are always at hand")
+                .font(Font.custom("Poppins-Light", size: 20))
+                .multilineTextAlignment(.center)
+                .padding()
+        }
+    }
 }

@@ -19,15 +19,15 @@ struct ContentView: View {
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                             // Hide splash screen after 2 seconds
-                            withAnimation {
+                            withAnimation(Animation.easeInOut) {
                                 isSplashScreenVisible = false
                             }
                         }
                     }
             } else if isFirstLaunch {
-                WelcomeScreen(onSignUp: {
+                GetStarted(onSignUp: {
                     // Handle signup completion
-                    withAnimation {
+                    withAnimation(Animation.easeInOut) {
                         isFirstLaunch = false
                     }
                 })
