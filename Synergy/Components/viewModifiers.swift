@@ -17,7 +17,7 @@ struct DefaultButtonViewModifier: ViewModifier {
         content
             .foregroundStyle(Color.fore)
             .font(Font.custom("Poppins-Medium", size: 20))
-            .frame(height: 55)
+            .frame(height: 50)
             .frame(maxWidth: .infinity)
             .background(backgroundColor)
             .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -43,7 +43,8 @@ struct DefaultTextFeildViewModifier: ViewModifier {
         content
             .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(backgroundColor)
+            .foregroundStyle(.back)
+            .background(.gray.opacity(0.35))
             .cornerRadius(10)
             .textInputAutocapitalization(.never)
             .autocorrectionDisabled()
