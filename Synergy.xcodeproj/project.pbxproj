@@ -26,8 +26,11 @@
 		AD2097CC2B63E2CB0082B345 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097BA2B63E2CB0082B345 /* Poppins-Black.ttf */; };
 		AD2097CD2B63E2CB0082B345 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097BB2B63E2CB0082B345 /* Poppins-ExtraBold.ttf */; };
 		AD2097CF2B63E2FE0082B345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */; };
+		AD231A4F2B66CA83004F7C46 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */; };
 		AD48AE3B2B6428020000F08E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48AE3A2B6428020000F08E /* SignUpScreen.swift */; };
 		AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD892B352B6582B000D603A2 /* SignInScreen.swift */; };
+		AD9590C32B666D2E00EF2AA8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */; };
+		AD9590C52B666E5200EF2AA8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */; };
 		ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE9F202B64359300FB7FBC /* SplashScreen.swift */; };
 		ADD7417F2B63ED8100057985 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7417E2B63ED8100057985 /* SwiftUIView.swift */; };
 		ADD741812B63EE3000057985 /* viewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD741802B63EE3000057985 /* viewModifiers.swift */; };
@@ -53,8 +56,12 @@
 		AD2097BB2B63E2CB0082B345 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD2097D02B63E3300082B345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		AD48AE3A2B6428020000F08E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		AD892B352B6582B000D603A2 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		AD9590C12B6669E600EF2AA8 /* Synergy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Synergy.entitlements; sourceTree = "<group>"; };
+		AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ADBE9F202B64359300FB7FBC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		ADD7417E2B63ED8100057985 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		ADD741802B63EE3000057985 /* viewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiers.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		AD20978D2B63BB310082B345 /* Synergy */ = {
 			isa = PBXGroup;
 			children = (
+				AD9590C12B6669E600EF2AA8 /* Synergy.entitlements */,
 				AD2097D02B63E3300082B345 /* Info.plist */,
 				AD20978E2B63BB310082B345 /* SynergyApp.swift */,
 				AD2097902B63BB310082B345 /* ContentView.swift */,
@@ -103,6 +111,8 @@
 				ADD741822B63F01A00057985 /* Onboarding */,
 				AD48AE392B6427F10000F08E /* Auth */,
 				ADD7417E2B63ED8100057985 /* SwiftUIView.swift */,
+				AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */,
+				AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */,
 				AD2097922B63BB330082B345 /* Assets.xcassets */,
 				AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */,
 				AD2097A92B63E26D0082B345 /* Fonts */,
@@ -138,6 +148,7 @@
 		AD48AE392B6427F10000F08E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */,
 				AD892B352B6582B000D603A2 /* SignInScreen.swift */,
 				AD48AE3A2B6428020000F08E /* SignUpScreen.swift */,
 			);
@@ -260,13 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD231A4F2B66CA83004F7C46 /* LoginScreen.swift in Sources */,
 				ADD741842B63F03200057985 /* WelcomeModel.swift in Sources */,
+				AD9590C32B666D2E00EF2AA8 /* CustomTextField.swift in Sources */,
 				AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */,
 				ADD741812B63EE3000057985 /* viewModifiers.swift in Sources */,
 				ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */,
 				AD2097A82B63D0730082B345 /* GetStarted.swift in Sources */,
 				AD2097912B63BB310082B345 /* ContentView.swift in Sources */,
 				ADD7417F2B63ED8100057985 /* SwiftUIView.swift in Sources */,
+				AD9590C52B666E5200EF2AA8 /* LoginViewModel.swift in Sources */,
 				AD48AE3B2B6428020000F08E /* SignUpScreen.swift in Sources */,
 				AD20978F2B63BB310082B345 /* SynergyApp.swift in Sources */,
 				ADD741862B63F14800057985 /* WelcomeScreen.swift in Sources */,
@@ -400,6 +414,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Synergy/Synergy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Synergy/Preview Content\"";
@@ -419,6 +435,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Synergy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,6 +447,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Synergy/Synergy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Synergy/Preview Content\"";
@@ -449,6 +468,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Synergy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,62 +7,48 @@
 
 import SwiftUI
 
-
-struct SwiftUIView: View {
-    @AppStorage("isFirstLaunch") private var isFirstLaunch: Bool = true
-    
-    var body: some View {
-        Group {
-            if isFirstLaunch {
-                //WelcomeScreen()
-                SplashScreen()
-            } else {
-                MainScreen()
-            }
-        }
-        .onChange(of: isFirstLaunch) { newValue in
-            // Update the flag in UserDefaults when the welcome screen is dismissed
-            if !newValue {
-                UserDefaults.standard.set(false, forKey: "isFirstLaunch")
-            }
-        }
-    }
-}
-
 struct WelcomeSccreen: View {
-    var body: some View {
-        VStack {
-            Text("Welcome to Your App!")
-            // Add your welcome screen content here
-            
-            // Button to dismiss the welcome screen
-            Button("Get Started") {
-                // Dismiss the welcome screen by updating the flag
-                UserDefaults.standard.set(false, forKey: "isFirstLaunch")
-            }
-        }
-    }
-}
-
-struct MainScreen: View {
-    @AppStorage("isFirstLaunch") private var isFirstLaunch: Bool = true
+    
+    //var onSignUp: () -> Void
     
     var body: some View {
-        VStack {
-            if isFirstLaunch {
-                Text("Show welcome screen or other content")
-            } else {
-                // Your main screen content goes here
-                Text("Main Screen")
+        NavigationStack {
+            ZStack {
+                VStack(spacing: 20) {
+                    Spacer()
+                    ImageTitleView()
+                    
+                    Spacer()
+                    
+                    Button(action: {}, label: {
+                        HStack {
+                            Image(systemName: "apple.logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                            Text("Log in with Apple")
+                                .font(.title3)
+                        }.DefaultButtonFormatting().cornerRadius(12)
+                    })
+                    
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        HStack {
+                            Image(systemName: "apple.logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                            Text("Log in with Google")
+                                .font(.title3)
+                        }.DefaultButtonFormatting().cornerRadius(12)
+                    })
+                    Spacer()
+                }
+                .padding(.horizontal)
             }
         }
     }
 }
-
-
-
-
 
 #Preview {
-    SwiftUIView()
+    WelcomeSccreen()
 }
