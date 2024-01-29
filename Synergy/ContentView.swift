@@ -12,6 +12,8 @@ struct ContentView: View {
     @AppStorage("isFirstLaunch") private var isFirstLaunch: Bool = true
     @State private var isSplashScreenVisible: Bool = true
     
+    @StateObject var loginModel: LoginViewModel = .init()
+    
     var body: some View {
         Group {
             if isSplashScreenVisible {
@@ -32,7 +34,12 @@ struct ContentView: View {
                     }
                 })
             } else {
-                LoginScreen()
+                if loginModel.logStatus {
+                    //MARK: Your Home View
+                    HomeScreen()
+                } else {
+                    LoginScreen()
+                }
             }
         }
     }

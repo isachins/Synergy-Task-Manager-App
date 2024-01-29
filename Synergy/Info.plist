@@ -12,6 +12,14 @@
 				<string>com.googleusercontent.apps.515236238654-pt3n9aqubig475g2ahh53pde1flralvf</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-515236238654-ios-dcddbef602fbbcb78c086f</string>
+			</array>
+		</dict>
 	</array>
 	<key>UIAppFonts</key>
 	<array>

@@ -25,10 +25,12 @@
 		AD2097CB2B63E2CB0082B345 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097B92B63E2CB0082B345 /* Poppins-Bold.ttf */; };
 		AD2097CC2B63E2CB0082B345 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097BA2B63E2CB0082B345 /* Poppins-Black.ttf */; };
 		AD2097CD2B63E2CB0082B345 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2097BB2B63E2CB0082B345 /* Poppins-ExtraBold.ttf */; };
-		AD2097CF2B63E2FE0082B345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */; };
 		AD231A4F2B66CA83004F7C46 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */; };
-		AD48AE3B2B6428020000F08E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48AE3A2B6428020000F08E /* SignUpScreen.swift */; };
-		AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD892B352B6582B000D603A2 /* SignInScreen.swift */; };
+		AD8361F72B68180000905459 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AD8361F62B68180000905459 /* GoogleSignIn */; };
+		AD8361F92B68180000905459 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD8361F82B68180000905459 /* GoogleSignInSwift */; };
+		AD8361FC2B681BEE00905459 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8361FB2B681BEE00905459 /* Application.swift */; };
+		AD8361FE2B68233900905459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8361FD2B68233900905459 /* GoogleService-Info.plist */; };
+		AD8362012B6829B500905459 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8362002B6829B500905459 /* HomeScreen.swift */; };
 		AD9590C32B666D2E00EF2AA8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */; };
 		AD9590C52B666E5200EF2AA8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */; };
 		ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE9F202B64359300FB7FBC /* SplashScreen.swift */; };
@@ -54,11 +56,11 @@
 		AD2097B92B63E2CB0082B345 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		AD2097BA2B63E2CB0082B345 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		AD2097BB2B63E2CB0082B345 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
-		AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD2097D02B63E3300082B345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		AD48AE3A2B6428020000F08E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
-		AD892B352B6582B000D603A2 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		AD8361FB2B681BEE00905459 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		AD8361FD2B68233900905459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD8362002B6829B500905459 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		AD9590C12B6669E600EF2AA8 /* Synergy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Synergy.entitlements; sourceTree = "<group>"; };
 		AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -74,8 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8361F72B68180000905459 /* GoogleSignIn in Frameworks */,
 				AD2097A02B63BD2F0082B345 /* FirebaseAnalytics in Frameworks */,
 				AD2097A62B63BD2F0082B345 /* FirebaseStorage in Frameworks */,
+				AD8361F92B68180000905459 /* GoogleSignInSwift in Frameworks */,
 				AD2097A22B63BD2F0082B345 /* FirebaseAuth in Frameworks */,
 				AD2097A42B63BD2F0082B345 /* FirebaseFirestore in Frameworks */,
 			);
@@ -105,16 +109,16 @@
 			children = (
 				AD9590C12B6669E600EF2AA8 /* Synergy.entitlements */,
 				AD2097D02B63E3300082B345 /* Info.plist */,
+				AD8361FD2B68233900905459 /* GoogleService-Info.plist */,
 				AD20978E2B63BB310082B345 /* SynergyApp.swift */,
 				AD2097902B63BB310082B345 /* ContentView.swift */,
 				AD892B372B6587EA00D603A2 /* Components */,
-				ADD741822B63F01A00057985 /* Onboarding */,
-				AD48AE392B6427F10000F08E /* Auth */,
-				ADD7417E2B63ED8100057985 /* SwiftUIView.swift */,
+				AD8361FA2B68194700905459 /* ViewModels */,
+				AD8361FF2B6829AB00905459 /* Views */,
 				AD9590C22B666D2E00EF2AA8 /* CustomTextField.swift */,
-				AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */,
+				ADD7417E2B63ED8100057985 /* SwiftUIView.swift */,
+				ADD741822B63F01A00057985 /* Onboarding */,
 				AD2097922B63BB330082B345 /* Assets.xcassets */,
-				AD2097CE2B63E2FE0082B345 /* GoogleService-Info.plist */,
 				AD2097A92B63E26D0082B345 /* Fonts */,
 				AD2097942B63BB330082B345 /* Preview Content */,
 			);
@@ -145,20 +149,30 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		AD48AE392B6427F10000F08E /* Auth */ = {
+		AD8361FA2B68194700905459 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */,
-				AD892B352B6582B000D603A2 /* SignInScreen.swift */,
-				AD48AE3A2B6428020000F08E /* SignUpScreen.swift */,
+				AD9590C42B666E5200EF2AA8 /* LoginViewModel.swift */,
 			);
-			path = Auth;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD8361FF2B6829AB00905459 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADBE9F202B64359300FB7FBC /* SplashScreen.swift */,
+				AD2097A72B63D0730082B345 /* GetStarted.swift */,
+				AD231A4E2B66CA83004F7C46 /* LoginScreen.swift */,
+				AD8362002B6829B500905459 /* HomeScreen.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AD892B372B6587EA00D603A2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				ADD741802B63EE3000057985 /* viewModifiers.swift */,
+				AD8361FB2B681BEE00905459 /* Application.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,9 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				ADBE9F222B64359E00FB7FBC /* Model */,
-				ADBE9F202B64359300FB7FBC /* SplashScreen.swift */,
 				ADD741852B63F14800057985 /* WelcomeScreen.swift */,
-				AD2097A72B63D0730082B345 /* GetStarted.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -203,6 +215,8 @@
 				AD2097A12B63BD2F0082B345 /* FirebaseAuth */,
 				AD2097A32B63BD2F0082B345 /* FirebaseFirestore */,
 				AD2097A52B63BD2F0082B345 /* FirebaseStorage */,
+				AD8361F62B68180000905459 /* GoogleSignIn */,
+				AD8361F82B68180000905459 /* GoogleSignInSwift */,
 			);
 			productName = Synergy;
 			productReference = AD20978B2B63BB310082B345 /* Synergy.app */;
@@ -234,6 +248,7 @@
 			mainGroup = AD2097822B63BB310082B345;
 			packageReferences = (
 				AD20979E2B63BD2E0082B345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD8361F52B68180000905459 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = AD20978C2B63BB310082B345 /* Products */;
 			projectDirPath = "";
@@ -254,13 +269,13 @@
 				AD2097C62B63E2CB0082B345 /* Poppins-Medium.ttf in Resources */,
 				AD2097CC2B63E2CB0082B345 /* Poppins-Black.ttf in Resources */,
 				AD2097BF2B63E2CB0082B345 /* Poppins-Thin.ttf in Resources */,
+				AD8361FE2B68233900905459 /* GoogleService-Info.plist in Resources */,
 				AD2097CB2B63E2CB0082B345 /* Poppins-Bold.ttf in Resources */,
 				AD2097932B63BB330082B345 /* Assets.xcassets in Resources */,
 				AD2097CD2B63E2CB0082B345 /* Poppins-ExtraBold.ttf in Resources */,
 				AD2097C22B63E2CB0082B345 /* Poppins-SemiBold.ttf in Resources */,
 				AD2097C32B63E2CB0082B345 /* Poppins-Regular.ttf in Resources */,
 				AD2097C52B63E2CB0082B345 /* Poppins-ExtraLight.ttf in Resources */,
-				AD2097CF2B63E2FE0082B345 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +289,14 @@
 				AD231A4F2B66CA83004F7C46 /* LoginScreen.swift in Sources */,
 				ADD741842B63F03200057985 /* WelcomeModel.swift in Sources */,
 				AD9590C32B666D2E00EF2AA8 /* CustomTextField.swift in Sources */,
-				AD892B362B6582B000D603A2 /* SignInScreen.swift in Sources */,
 				ADD741812B63EE3000057985 /* viewModifiers.swift in Sources */,
 				ADBE9F212B64359300FB7FBC /* SplashScreen.swift in Sources */,
 				AD2097A82B63D0730082B345 /* GetStarted.swift in Sources */,
 				AD2097912B63BB310082B345 /* ContentView.swift in Sources */,
+				AD8361FC2B681BEE00905459 /* Application.swift in Sources */,
 				ADD7417F2B63ED8100057985 /* SwiftUIView.swift in Sources */,
 				AD9590C52B666E5200EF2AA8 /* LoginViewModel.swift in Sources */,
-				AD48AE3B2B6428020000F08E /* SignUpScreen.swift in Sources */,
+				AD8362012B6829B500905459 /* HomeScreen.swift in Sources */,
 				AD20978F2B63BB310082B345 /* SynergyApp.swift in Sources */,
 				ADD741862B63F14800057985 /* WelcomeScreen.swift in Sources */,
 			);
@@ -507,6 +522,14 @@
 				minimumVersion = 10.20.0;
 			};
 		};
+		AD8361F52B68180000905459 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -529,6 +552,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD20979E2B63BD2E0082B345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		AD8361F62B68180000905459 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD8361F52B68180000905459 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		AD8361F82B68180000905459 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD8361F52B68180000905459 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
